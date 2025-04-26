@@ -1,32 +1,131 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>meu portifolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio do BK</title>
 </head>
-    
+
 <body>
-  <img src="img/avatar-perfil.png" alt="avatar do bk" srcset="" />
-    <p>Eu sou o "BK"_</p>
-  <h1>Eu Sou cantor</h1>
-    <p>
-    Sou cantor cujo nome real é Abebe Bikila Costa Santos, 
-    um rapper, escritor e compositor brasileiro.
-    minhas carreira começou em 2016 com o álbum de estreia 
-    "Castelos & Ruínas", seguido de "Gigantes" (2018),
-    "O Líder em Movimento" (2020) e "ICARUS" 
-    (2022), consolidando-o como um dos principais nomes do rap nacional. 
-    Além dos álbuns, lançei diversos EPs e participei de projetos colaborativos. 
-     </p>
-    <p>Minhas habilidades</p>
-    <div>
-    <p>rimas</p>
-    <p>composições</p>
-    <p>cantar</p>
-    <p>feats</p>
-  </div>
+    <header class="container text-center">
+        <img src="img/batman-avatar.png" alt="avatar do BK" class="rounded-circle" width="150" height="150">
+        <p class="lead">Eu sou o BK</p>
+        <h1>O Mestre das Rimas</h1>
+        <p>Rei das palavras, lenda viva da cena. Minha missão é dominar cada palco com a força do meu som.</p>
+        <p>Minhas habilidades</p>
+        <div>
+            <p class="badge bg-dark">Flow</p>
+            <p class="badge bg-dark">Letras</p>
+            <p class="badge bg-dark">Estilo</p>
+            <p class="badge bg-dark">Presença de palco</p>
+        </div>
+    </header>
+
+    <main class="container mt-5">
+        <h2>Minhas aventuras</h2>
+        <div class="row">
+            <!-- Aventura 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/aventura-gotham.png" class="card-img-top" alt="Imagem do show na cidade">
+                    <div class="card-body">
+                        <h5 class="card-title">Show pela cidade</h5>
+                        <p class="card-text">Uma noite insana, levando meu som pra quebrada inteira.</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Ver aventura</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Aventura 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/aventura-corujas.png" class="card-img-top" alt="Imagem do desafio das rimas">
+                    <div class="card-body">
+                        <h5 class="card-title">Desafio dos proibidões</h5>
+                        <p class="card-text">Mostrei quem tem o verso mais pesado nas batalhas de rua.</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Ver aventura</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Aventura 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/aventura-joker.png" class="card-img-top" alt="Imagem do duelo de rimas">
+                    <div class="card-body">
+                        <h5 class="card-title">Duelo na quebrada</h5>
+                        <p class="card-text">Disputa intensa de quem tem a alma mais quente no rap.</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">Ver aventura</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal 1 -->
+    <div class="modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title">Show pela cidade</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Naquela noite, o som bateu forte. Cada verso ecoou nas ruas.</p>
+                    <img src="img/aventura-gotham.png" class="img-fluid w-100" alt="Imagem do show na cidade">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://example.com/bk-show" class="text-white">Ver aventura completa</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal" id="modal2" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title">Desafio dos proibidões</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Sem medo, entrei nas batalhas e mostrei quem domina o mic.</p>
+                    <img src="img/aventura-corujas.png" class="img-fluid w-100" alt="Imagem do desafio das rimas">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://example.com/bk-desafio" class="text-white">Ver aventura completa</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal" id="modal3" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title">Duelo na quebrada</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Não era só rimar, era passar verdade. E o BK mostrou que verdade é o que não falta.</p>
+                    <img src="img/aventura-joker.png" class="img-fluid w-100" alt="Imagem do duelo de rimas">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://example.com/bk-duelo" class="text-white">Ver aventura completa</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container text-center mt-5 mb-4 text-muted">
+        <p>&copy; 2025 BK - Dominando tudo nas pistas e nos palcos.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-    
-</body>
+
 </html>
